@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <!-- Linking and stuffs -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/9a84e6ea8f.js" crossorigin="anonymous"></script>
+
+    <title>Know your emoji</title>
+</head>
+
+<body>
+    
+    <h1>Wanna find out , about your emoji by your name ?</h1>
+
+    <div id="box">
+
+        <div>
+            <h3>Enter Your Name</h3>
+            <input type="text" name="" id="name"><br>
+        </div>
+        <div class="image">
+            <img id="imagebolte" src="https://media.giphy.com/media/xUPGGDNsLvqsBOhuU0/giphy.gif" alt="" width="200px"
+                height="200px">
+                
+
+        </div>
+        <button class="btn">Click Here!</button>
+    </div>
+    <div class="footer">
+        <div>
+            <div id="social_container">
+                <a href="https://www.instagram.com/mr_incognito1109/" target="_blank"><i id="instagram" class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://www.facebook.com/pratik.shukla.123829" target="_blank"><i id="facebook" class="fab fa-facebook fa-3x"></i></a>
+                <a href="https://twitter.com/Mrincognito1109" target="_blank"><i id="twitter" class="fab fa-twitter-square fa-3x"></i></a>
+                <a href="https://mr-incognito.tk" target="_blank"><i id="website" class="fas fa-user-secret fa-3x"></i></a>
+
+            </div>
+            <div id="footer-text">
+                <span>By <a href="https://mr-incognito.tk">Mr- incognito</a> | No Copyrights © | Thanks for API joeschmoe</span>
+                <p>Created just for fun only!!!</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js" integrity="sha512-Pa4Jto+LuCGBHy2/POQEbTh0reuoiEXQWXGn8S7aRlhcwpVkO8+4uoZVSOqUjdCsE+77oygfu2Tl+7qGHGIWsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                const ab = $('#name').val();
+                alert(ab);
+                $('#imagebolte').attr('src',`https://joeschmoe.io/api/v1/${ab}`);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
